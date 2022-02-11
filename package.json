@@ -1,13 +1,19 @@
 {
+  "homepage": "http://sysrock18.github.io/lazy-loading-wolfs",
+  "name": "wolf-lazy-loading",
+  "version": "0.1.0",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "format": "prettier --write \"src/**/*.js\"",
     "install:husky": "husky install",
     "lint": "prettier --check \"src/**/*.js\"",
     "pre-commit": "pretty-quick --staged"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "husky": "7",
     "prettier": "^2.0.5",
     "pretty-quick": "^3.1.0",
