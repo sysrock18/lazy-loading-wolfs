@@ -5,7 +5,6 @@ module.exports = {
     src: '/dist',
   },
   buildOptions: {
-    baseUrl: '/lazy-loading-wolfs',
-    out: 'docs'
+    out: 'dist'
   },
 }
